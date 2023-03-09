@@ -5,6 +5,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+        #self.screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN, pygame.RESIZABLE)
         pygame.display.set_caption("Islet Roasters")
 
         self.clock = pygame.time.Clock()
