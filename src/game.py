@@ -1,6 +1,7 @@
 import pygame
 import sys
 import debug as dbg
+import fpsmeter as fm
 from settings import *
 class Game:
     def __init__(self):
@@ -17,7 +18,7 @@ class Game:
                 sys.exit()
     def draw(self):
         self.screen.fill("black")
-        dbg.debug(f"{self.clock.get_fps() :.1f}")
+        fm.fpsMeter(f"{self.clock.get_fps() :.1f}")
 
     def update(self):
         pygame.display.update()
