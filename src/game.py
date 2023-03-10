@@ -1,3 +1,8 @@
+"""
+Game holds the main game class information
+Greg Lynskey
+03/05/2023
+"""
 import pygame
 import sys
 import debug as dbg

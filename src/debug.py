@@ -1,3 +1,8 @@
+"""
+Debug prints any info in the top right corner of the screen
+Greg Lynskey
+03/05/2023
+"""
 import pygame
 
 pygame.init()

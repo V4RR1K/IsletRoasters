@@ -1,4 +1,8 @@
-# Greg Lynskey
+"""
+main runs the game
+Greg Lynskey
+03/05/2023
+"""
 from game import *
 def main():
     new_game = Game()
