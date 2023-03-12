@@ -25,6 +25,7 @@ class Game:
         self.level = level.Level()
 
         self.clock = pygame.time.Clock()
+
     def check_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_MINUS):
@@ -38,7 +39,7 @@ class Game:
 
     def update(self):
         pygame.display.update()
-        self.clock.tick(FPS)
+        self.clock.tick(self.settings.FPS)
     def run(self):
         while True:
             self.check_events()
