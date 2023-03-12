@@ -35,3 +35,4 @@ Islet Roasters is a must-play game for anyone who loves coffee and adventure.
 ## Friends and Family Ideas
 
 - Will Ozek: Toupee Item (Grants Resistance to Baldness)
+- Aaron: Store robberies

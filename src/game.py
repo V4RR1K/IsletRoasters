@@ -13,16 +13,16 @@ from settings import *
 class Game:
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        #self.screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN, pygame.RESIZABLE)
+        #self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+        self.screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN, pygame.RESIZABLE)
         pygame.display.set_caption("Islet Roasters: Brewing Away!")
-        pygame.display.set_icon(pygame.image.load("assets/MainCharacterForwardIdle.png"))
+        pygame.display.set_icon(pygame.image.load("assets/player/MainCharacterForwardIdle.png"))
         self.level = level.Level()
 
         self.clock = pygame.time.Clock()
     def check_events(self):
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_MINUS):
                 pygame.quit()
                 sys.exit()
     def draw(self):
